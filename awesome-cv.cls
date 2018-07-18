@@ -826,14 +826,15 @@
 }
 % Define an entry of cv information
 % Usage: \cventry{<authors>}{<title>}{<journal>}{<date>}
-\newcommand*{\cvmentor}[3]{%
+\newcommand*{\cvmentor}[4]{%
   \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
     \ifempty{#2#3}
       {\mentornamestyle{#1} & \mentordatestyle{#3}}
-      {\mentornamestyle{#1} \teachdescriptionstyle{#2} & \mentordatestyle{#3}}
+      {\mentornamestyle{#1} \mentordescriptionstyle{#2} & \mentordatestyle{#3} \\
+       \teachdescriptionstyle{#4}}
   \end{tabular*}%
 }
 
