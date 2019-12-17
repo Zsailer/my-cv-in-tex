@@ -195,15 +195,17 @@
 \newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
-\newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
+\newcommand*{\sectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 \newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text}}
 
 % For elements of entry
-\newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\entrytitlestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\entrypositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{graytext} #1}}
-\newcommand*{\entrylocationstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
+\newcommand*{\entrylocationstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
+\newcommand*{\entrydescriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{text} #1}}
+
 
 % For elements of point
 \newcommand*{\pointtitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\scshape\color{darktext} #1}}
@@ -218,17 +220,6 @@
 \newcommand*{\researchdatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
 \newcommand*{\researchlocationstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
 
-% For elements of publication
-\newcommand*{\publicauthorsstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\scshape\color{darktext} #1}}
-\newcommand*{\publictitlestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
-\newcommand*{\publicjournalstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
-\newcommand*{\publicdatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
-
-% For elements of presentation
-\newcommand*{\presentauthorsstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{darktext} #1}}
-\newcommand*{\presenteventstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{graytext} #1}}
-\newcommand*{\presentlocationstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
-\newcommand*{\presentdatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
 
 % For elements of open source software
 \newcommand*{\ossprojectstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape\color{darktext} #1}}
@@ -240,7 +231,7 @@
 \newcommand*{\teachdescriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
 \newcommand*{\teachdatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
 
-% For elements of teachings
+% For elements of mentor
 \newcommand*{\mentornamestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\scshape\color{darktext} #1}}
 \newcommand*{\mentordescriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape\color{graytext} #1}}
 \newcommand*{\mentordatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
@@ -259,8 +250,8 @@
 \newcommand*{\honorlocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
 
 % For elements of skill
-\newcommand*{\skilltypestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\skillsetstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{text} #1}}
+\newcommand*{\skilltypestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\skillsetstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
 
 % For elements of the cover letter
 \newcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
@@ -309,7 +300,7 @@
 \newcommand*{\address}[1]{\def\@address{#1}}
 
 % Define writer's position
-% Usage: \name{<position>}
+% Usage: \position{<position>}
 \newcommand*{\position}[1]{\def\@position{#1}}
 
 % Defines writer's mobile (optional)
@@ -317,7 +308,7 @@
 \newcommand*{\mobile}[1]{\def\@mobile{#1}}
 
 % Defines writer's email (optional)
-% Usage: \email{<email adress>}
+% Usage: \email{<email address>}
 \newcommand*{\email}[1]{\def\@email{#1}}
 
 % Defines writer's homepage (optional)
@@ -342,6 +333,7 @@
 % Usage: \linkedin{<linked-in-nick>}
 \newcommand*{\linkedin}[1]{\def\@linkedin{#1}}
 
+% Defines writer's twitter (optional)
 % Usage: \twitter{<twitter handle>}
 \newcommand*{\twitter}[1]{\def\@twitter{#1}}
 
@@ -357,7 +349,25 @@
 % Usage: \xing{<xing name>}
 \newcommand*{\xing}[1]{\def\@xing{#1}}
 
-% Defines writer's twitter (optional)
+% Defines writer's medium profile (optional)
+% Usage: \medium{<medium account>}
+\newcommand*{\medium}[1]{\def\@medium{#1}}
+
+% Defines writer's google scholar profile (optional)
+% Usage: \googlescholar{<googlescholar userid>}{<googlescholar username>}
+% e.g.https://scholar.google.co.uk/citations?user=wpZDx1cAAAAJ
+% would be \googlescholar{wpZDx1cAAAAJ}{Name-to-display-next-icon}
+% If 'googlescholar-name' is not provided than it defaults to
+% '\firstname \lastname'
+\newcommand*{\googlescholar}[2]{%
+  \def\@googlescholarid{#1}%
+  \ifthenelse{\equal{#2}{}}{%
+    \def\@googlescholarname{\@firstname~\@lastname}%
+  }{%
+    \def\@googlescholarname{#2}%
+  }%
+}
+
 % Defines writer's extra informations (optional)
 % Usage: \extrainfo{<extra informations>}
 \newcommand*{\extrainfo}[1]{\def\@extrainfo{#1}}
@@ -415,8 +425,8 @@
 \newcommand{\acvHeaderAfterQuoteSkip}{5mm}
 
 % Others
-\newcommand{\acvSectionTopSkip}{3mm}
-\newcommand{\acvSectionContentTopSkip}{2.5mm}
+\newcommand{\acvSectionTopSkip}{1mm}
+\newcommand{\acvSectionContentTopSkip}{1mm}
 
 
 %-------------------------------------------------------------------------------
@@ -432,7 +442,6 @@
 
 % Use to execute conditional statements by checking empty string
 \newcommand*{\ifempty}[3]{\ifthenelse{\isempty{#1}}{#2}{#3}}
-
 
 %-------------------------------------------------------------------------------
 %                Commands for elements of CV structure
@@ -566,6 +575,10 @@
   \fancyfoot[R]{\footerstyle{#3}}
 }
 
+
+% -------------------------------------- Section -----------------------------------------
+
+
 % Define a section for CV
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{%
@@ -574,6 +587,8 @@
   \phantomsection
   \color{gray}\vhrulefill{0.9pt}
 }
+
+% -------------------------------------- SubSection -----------------------------------------
 
 % Define a subsection for CV
 % Usage: \cvsubsection{<subsection-title>}
@@ -584,6 +599,8 @@
   \phantomsection
 }
 
+% -------------------------------------- Paragraph -----------------------------------------
+
 % Define a paragraph for CV
 \newenvironment{cvparagraph}{%
   \vspace{\acvSectionContentTopSkip}
@@ -593,6 +610,8 @@
   \par
   \vspace{2mm}
 }
+
+% -------------------------------------- Entry -----------------------------------------
 
 % Define an environment for cventry
 \newenvironment{cventries}{%
@@ -612,9 +631,11 @@
       {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
       {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
       \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
-    \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
+    \multicolumn{2}{L{\textwidth}}{\entrydescriptionstyle{#5}}
   \end{tabular*}%
 }
+
+% -------------------------------------- Points -----------------------------------------
 
 % Define an environment for cvpoint
 \newenvironment{cvpoints}{%
@@ -636,6 +657,38 @@
       \pointpositionstyle{#1} & \pointdatestyle{#4} \\}
   \end{tabular*}%
 }
+
+% -------------------------------------- Education -----------------------------------------
+
+
+% For elements of point
+\newcommand*{\edutitlestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\edulocationstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{graytext} #1}}
+\newcommand*{\edudatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
+
+
+% Define an environment for cvpoint
+\newenvironment{edu}{%
+  \vspace{\acvSectionContentTopSkip}
+  \begin{center}
+}{%
+  \end{center}
+}
+% Define an point of cv information
+% Usage: \cventry{<institute>}{<degree>}{<location>}{<date>}
+\newcommand*{\cvedu}[4]{%
+  \vspace{-2.0mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+    %\ifempty{#2#3}
+    {\edutitlestyle{#1}{\enskip\cdotp\enskip}\edulocationstyle{#2}  & \edudatestyle{#3} \\}
+    \vspace{-2.0mm}
+    \multicolumn{2}{L{\textwidth}}{\entrydescriptionstyle{#4}}
+  \end{tabular*}%
+}
+
+% -------------------------------------- Research -----------------------------------------
 
 
 % Define an environment for cvpoint
@@ -659,6 +712,13 @@
   \end{tabular*}%
 }
 
+% -------------------------------------- Publication -----------------------------------------
+
+% For elements of publication
+\newcommand*{\publicauthorsstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\publictitlestyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{darktext} #1}}
+\newcommand*{\publicjournalstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
+\newcommand*{\publicdatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
 
 % Define an environment for cvpublication
 \newenvironment{cvpublications}{%
@@ -681,6 +741,15 @@
   \end{tabular*}%
 }
 
+% -------------------------------------- Presentation -----------------------------------------
+
+% For elements of presentation
+\newcommand*{\presenttypestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\presenttitlestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
+\newcommand*{\presenteventstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{graytext} #1}}
+\newcommand*{\presentlocationstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
+\newcommand*{\presentdatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
+
 % Define an environment for cvpublication
 \newenvironment{cvpresentations}{%
   \vspace{\acvSectionContentTopSkip}
@@ -690,18 +759,17 @@
 }
 % Define an entry of cv information
 % Usage: \cventry{<authors>}{<title>}{<event>}{<date>}
-\newcommand*{\cvpresentation}[4]{%
+\newcommand*{\cvpresentation}[5]{%
   \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
-    \ifempty{#2#3}
-      {\presentauthorsstyle{#1} & \presentdatestyle{#4} \\}
-      {\presentauthorsstyle{#1} & \presentlocationstyle{#3} \\
-       \presenteventstyle{#2} & \presentdatestyle{#4}\\}
+      {\presenttypestyle{#1}{\enskip\cdotp\enskip}\presenttitlestyle{#2} & \presentlocationstyle{#4} \\
+       \presenteventstyle{#3} & \presentdatestyle{#5}\\}
   \end{tabular*}%
 }
 
+% -------------------------------------- OSS -----------------------------------------
 
 % Define an environment for cvpublication
 \newenvironment{cvossoftware}{%
@@ -721,6 +789,9 @@
   \ossurlstyle{#3} \\
   \vspace{-4.0mm}
 }
+
+% -------------------------------------- Subentry -----------------------------------------
+
 
 % Define an environment for cvsubentry
 \newenvironment{cvsubentries}{%
@@ -746,6 +817,9 @@
   \end{tabular*}
 }
 
+% -------------------------------------- Honors -----------------------------------------
+
+
 % Define an environment for cvhonor
 \newenvironment{cvhonors}{%
   \vspace{\acvSectionContentTopSkip}
@@ -763,6 +837,9 @@
 \newcommand*{\cvhonor}[4]{%
   \honordatestyle{#4} & \honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{#3} \\
 }
+
+% -------------------------------------- Skills -----------------------------------------
+
 
 % Define an environment for cvskill
 \newenvironment{cvskills}{%
@@ -782,6 +859,8 @@
 	\skilltypestyle{#1} & \skillsetstyle{#2} \\
 }
 
+% -------------------------------------- Items -----------------------------------------
+
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{%
   \vspace{-4.0mm}
@@ -794,6 +873,8 @@
   \end{justify}
   \vspace{-4.0mm}
 }
+
+% -------------------------------------- Teaching -----------------------------------------
 
 
 % Define an environment for cvpublication
@@ -816,6 +897,9 @@
        \teachdescriptionstyle{#2}}
   \end{tabular*}%
 }
+
+% -------------------------------------- Mentoring -----------------------------------------
+
 
 % Define an environment for cvpublication
 \newenvironment{cvmentoring}{%
